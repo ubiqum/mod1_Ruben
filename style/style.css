@@ -1,45 +1,80 @@
 body {
-	margin-top: 10%;
-	margin-left: 10%;
+	margin: 2% 20%;
+	font-family: Futura,Trebuchet MS,Arial,sans-serif;
+	height: 800px;
 } 
 
-img {
-	width: 100px;
-	height: 100px;
+.logo {
+	width: 200px;
+	height: 200px;
 	float: left;
 }
 
+h1 {
+	margin-bottom: 25px;
+	font-size: 2.4rem;
+}
+
 .soccer {
-	margin-top: 40px;
+	width: 200px;
+	height: auto;
+	float: left;
+}
+
+.soccer-about {
+	width: 200px;
+	height: auto;
+	float: left;
+	margin-top: 50px;
 }
 
 .navbar {
-	padding-left: 120px;
-	height: 100px;
+	align-items: center !important;
+	height: 250px;
+	box-shadow: 0 10px 10px -10px #8c8b8b;
+}
+
+.navbar-header {
+	padding-top: 50px;
+	height: 150px;
+}
+
+.nav-link {
+	height: 50px;
+	padding-top: 75px;
+	text-align: left;
+	margin-left: 0;
+	font-size: 0.9rem;
 }
 
 div a{
-	text-decoration: none;
-	margin: 1%;
 	border-right: 1px solid black;
-	padding-right: 18px;
+	padding: 5px 22px;
 	color: black;
 }
 
 .main-content {
-	padding-top: 30px;
+	margin-top: 50px;
+	margin-right: 50px;
 }
 
 .content {
-	padding-left: 150px;
+	text-align: justify;
 }
 
 ul {
 	list-style: none;
+	padding-left: 0;
 }
 
 li {
-	padding-left: 30px;
+	margin-bottom: 15px;
+}
+
+.image-wrapper {
+	width: 250px;
+	float: left;
+	margin-left: 25px;
 }
 
 .italic {
@@ -48,9 +83,42 @@ li {
 }
 
 h3 {
+	margin-left: 275px;
 	margin-bottom: 0;
 }
+
+h2 {
+	text-decoration: underline;
+}
 .indent {
-	padding-left: 25px;
+	margin-left: 275px;
+	margin-bottom: 0;
 	margin-top: 0;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.content-border {
+	width: 350px;
+	height: 100px;
+	box-shadow: 1px 1px 5px #8c8b8b;
+	padding: 50px;
+	text-align: center;
+	float: right;
+	margin-right: 50px;
+	margin-top: 50px;
+}
+
+.content-border-home {
+	width: 350px;
+	height: 250px;
+	box-shadow: 1px 1px 5px #8c8b8b;
+	padding: 25px;
+	text-align: center !important;
+	align-items: center;
+	float: right;
+	margin-right: 100px;
+	margin-top: 50px;
 }
