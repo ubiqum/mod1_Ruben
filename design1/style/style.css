@@ -1,0 +1,135 @@
+/*CSS RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Start of the styling */
+
+body {
+	margin: 3%;
+	font-family: Futura,Trebuchet MS,Arial,sans-serif;
+	color: #023B0B !important;
+} 
+
+.page {
+	width: 840px;
+	margin: auto;
+	box-shadow: 2px 2px 2px 2px #202d26;
+	height: 640px;
+}
+
+header {
+	margin-top: 0;
+	height: 150px;
+	color: white;
+	text-align: center;
+	background-image: url("../../images/design1.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.background {
+
+}
+
+h1 {
+	font-size: 3rem;
+	line-height: 150px;
+	text-shadow: 3px 3px 3px #202d26;
+}
+
+.sub-header {
+	height: 30px;
+	background-color: #202d26;
+	margin-top: 0;
+	font-size: 1.5rem;
+}
+
+.sub-header h2 {
+	line-height: 30px;
+}
+
+.logo {
+	width: 100px;
+	float: right;
+	margin-right: 10%;
+	position: relative;
+	top: -35px;
+}
+
+.logo img{
+	max-width: 100px;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+	margin-top: 100px;
+	display:flex;
+}
+
+aside {
+	margin-top: 10px;
+}
+
+aside li {
+	padding: 15px;
+}
+
+main {
+	margin-top: 10px;
+	margin: auto;
+	text-align: center;
+}
+
+main li {
+	padding-top: 5px;
+	padding-bottom: 15px;
+}
+ main span {
+ 	font-style: italic;
+ 	font-weight: lighter;
+ }
+

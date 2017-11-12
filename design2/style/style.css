@@ -1,0 +1,142 @@
+/*CSS RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Start of the styling */
+
+body {
+	margin: 0;
+	font-family: Futura,Trebuchet MS,Arial,sans-serif;
+	height: 600px;
+	color: #023B0B !important;
+} 
+
+header {
+	margin-top: 10%;
+}
+
+#background {
+	margin-top: 12px;
+	height: 150px;
+	background-color: #202d26;
+	background-image: url("../../images/design2.jpg");
+	background-position: center;
+	background-size: inherit;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	font-size: 2rem;
+	line-height: 25px;
+	text-shadow: 2px 2px 2px #202d26;
+	text-transform: uppercase;
+	margin-left: 5%;
+	width: 70%;
+}
+
+nav {
+	float: right;
+	margin-right: 5%;
+}
+
+button {
+	padding: 3px;
+	background-color: #4298d6;
+	border: solid 2px #202d26;
+	border-radius: 2px;
+	box-shadow: 1px 1px 1px 1px #202d26;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.sub-header {
+	height: 30px;
+	background-color: #202d26;
+	margin-top: 0;
+	font-size: 1.5rem;
+	text-align: center;
+	color: white;
+}
+
+.sub-header h2 {
+	line-height: 30px;
+}
+
+.logo {
+	width: 100px;
+	float: right;
+	margin-right: 10%;
+	position: relative;
+	line-height: 100px;
+	align-items: middle;
+}
+
+.logo img{
+	max-width: 100px;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+	display:flex;
+}
+
+main {
+	margin: auto;
+	text-align: left;
+}
+
+main li {
+	padding-top: 5px;
+	padding-bottom: 15px;
+}
+ main span {
+ 	font-style: italic;
+ 	font-weight: lighter;
+ }
+
