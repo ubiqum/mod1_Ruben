@@ -47,16 +47,16 @@ table {
 /*Start of the styling */
 
 body {
-	margin: 3%;
 	font-family: Futura,Trebuchet MS,Arial,sans-serif;
 	color: #023B0B !important;
+	font-size: 16px;
 } 
 
 .page {
 	width: 840px;
+	height: 800px;
 	margin: auto;
 	box-shadow: 2px 2px 2px 2px #202d26;
-	height: 640px;
 }
 
 header {
@@ -68,10 +68,6 @@ header {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-}
-
-.background {
-
 }
 
 h1 {
@@ -103,33 +99,54 @@ h1 {
 	max-width: 100px;
 }
 
-.container {
-	width: 90%;
-	margin: auto;
-	margin-top: 100px;
-	display:flex;
-}
-
 aside {
-	margin-top: 10px;
+	margin-top: 75px;
+	margin-left: 5%;
+	display: flex;
 }
 
 aside li {
 	padding: 15px;
+	text-decoration: none;
+}
+
+aside a {
+	text-decoration: none;
+	color: #202d26;
+}
+
+aside a:hover {
+	font-size: 24px;
+	font-weight: bold;
 }
 
 main {
-	margin-top: 10px;
-	margin: auto;
-	text-align: center;
+	margin-top: -125px;
+	margin-left: 200px;
+	text-align: justify;
 }
 
-main li {
-	padding-top: 5px;
+#about {
+	margin-right: 6%;
+}
+
+main p {
+	padding-bottom: 30px;
+}
+
+section h3 {
+	font-size: 20px;
+	font-weight: bold;
 	padding-bottom: 15px;
 }
- main span {
- 	font-style: italic;
- 	font-weight: lighter;
- }
 
+main li:nth-of-type(even) {
+	padding-bottom: 50px;
+}
+
+main li:nth-of-type(odd) {
+	font-size: 20px;
+	font-style: italic;
+	font-weight: lighter;
+	padding-bottom: 10px;
+}

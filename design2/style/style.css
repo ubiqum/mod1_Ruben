@@ -51,10 +51,15 @@ body {
 	font-family: Futura,Trebuchet MS,Arial,sans-serif;
 	height: 600px;
 	color: #023B0B !important;
+	font-size: 18px;
 } 
 
+.page {
+	max-width: 900px;
+}
+
 header {
-	margin-top: 10%;
+	margin-top: 2%;
 }
 
 #background {
@@ -63,22 +68,24 @@ header {
 	background-color: #202d26;
 	background-image: url("../../images/design2.jpg");
 	background-position: center;
-	background-size: inherit;
 	background-repeat: no-repeat;
+	background-size:cover;
 }
 
 h1 {
 	font-size: 2rem;
-	line-height: 25px;
+	line-height: ;
 	text-shadow: 2px 2px 2px #202d26;
 	text-transform: uppercase;
 	margin-left: 5%;
+	margin-bottom: -10px;
 	width: 70%;
 }
 
 nav {
-	float: right;
 	margin-right: 5%;
+	position: absolute;
+	right: 5%;
 }
 
 button {
@@ -89,7 +96,12 @@ button {
 	box-shadow: 1px 1px 1px 1px #202d26;
 }
 
-a {
+button:hover {
+	background-color: #2ce848;
+	font-size: 20px;
+}
+
+nav a {
 	color: white;
 	text-decoration: none;
 }
@@ -109,30 +121,77 @@ a {
 
 .logo {
 	width: 100px;
-	float: right;
-	margin-right: 10%;
-	position: relative;
-	line-height: 100px;
-	align-items: middle;
+	top: 165px;
+	right: 13%;
+	position: absolute;
 }
 
 .logo img{
 	max-width: 100px;
 }
 
-.container {
-	width: 90%;
-	margin: auto;
-	display:flex;
-}
-
 main {
-	margin: auto;
-	text-align: left;
+	width: 80%;
+	margin: 100px auto;
+	text-align: justify;
 }
 
-main li {
-	padding-top: 5px;
+ul {
+	text-align: center;
+}
+
+li:nth-of-type(even) {
+	padding-bottom: 50px;
+}
+
+li:nth-of-type(odd) {
+	font-size: 20px;
+	font-style: italic;
+	font-weight: lighter;
+	padding-bottom: 10px;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight:bold;
+	padding-bottom: 10px;
+}
+
+section p{
+	padding-bottom: 25px;
+}
+
+#contact p {
+	padding: 25px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main ul:nth-child(2) {
 	padding-bottom: 15px;
 }
  main span {
