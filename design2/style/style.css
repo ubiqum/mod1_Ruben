@@ -120,14 +120,14 @@ nav a {
 }
 
 .logo {
-	width: 100px;
-	top: 165px;
-	right: 13%;
+	width: 150px;
+	top: 250px;
+	left: 15px;
 	position: absolute;
 }
 
 .logo img{
-	max-width: 100px;
+	max-width: 150px;
 }
 
 main {
@@ -165,37 +165,3 @@ section p{
 	padding: 25px;
 	text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-main ul:nth-child(2) {
-	padding-bottom: 15px;
-}
- main span {
- 	font-style: italic;
- 	font-weight: lighter;
- }
-

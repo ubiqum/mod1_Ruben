@@ -1,134 +1,159 @@
+/*CSS RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-	margin:2% 20%;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
 	font-family: Futura,Trebuchet MS,Arial,sans-serif;
-	height: 600px;
-	color: #023B0B !important;
+	color: white;
+	height: 840px;
+	overflow: hidden;
 } 
 
-/* HEADER STYLING --> I set a fixed height and centered compared with the logo, on the right side of the header*/
-header { 
+.background {
+	background-image: url("../../images/soccer.jpeg") !important;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 840px;
+}
+
+header {
 	width: 100%;
-	height: 250px;
-	box-shadow: 1px 10px 10px -10px #023B0B;
-	border-radius: 5px 0;
+	height: 100px;
+	background-color: #01280c;
+	color: white;
+	box-shadow: 1px 1px 1px 1px #2ce848;
 }
 
-.navbar-header {
-	padding-top: 50px;
-	height: 150px;
-	width: 66%;
-	margin-left: 33%;
+.image-wrapper img {
+	width: 75px;
+	height: 75px;
+	position: absolute;
+	top: 12.5px;
+	left: 2%;
 }
 
-.logo {
-	width: 200px;
-	box-shadow: none;
+header h1 {
+	position: absolute;
+	left: 12%;	
+	top: 25px;
+	font-size: 46px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #2ce848;
 }
 
-h1 {
-	margin-bottom: 25px;
-	font-size: 2.5rem;
-}
-
-/*Navigation links styles */
 nav {
-	height: 50px;
-	padding-top: 25px;
-	font-size: 0.9rem;
+	position: absolute;
+	top: 80px;
+	left: 12%;
 }
 
-nav a{
-	padding: 5px 22px;
-	color: #023B0B !important;
-	font-family: Futura,Trebuchet MS,Arial,sans-serif;
+nav a {
+	color: white;
+	padding-right: 10px;
 }
 
-#border-link {
-	border-right: 1px solid #023B0B;
-	border-left: 1px solid #023B0B;
-}
-
-/* Image positioning */
-.soccer {
-	width: 200px;
-	height: auto;
-	margin-top: 50px;
-}
-
-.soccer-about {
-	margin-top: 100px;
-}
-
-.image-wrapper {
-	width: 25%;
-	float: left;
-	margin-left: 75px;
-}
-
-img {
-	border-radius: 5px 0;
-	box-shadow: 1px 1px 5px #023B0B;
-}
-/* Main Content Block Styling */
-.main-content {
-	width:100%;
-	display:flex;
-}
-
-aside {
-	width: 33%;
+nav a:hover {
+	font-size: 20px;
+	color: #2ce848;
 }
 
 main {
-	width: 66%;
+	width: 785.67px;
+	height: 400px;
+	margin: 150px auto;
+	box-shadow: 2px 2px 2px 2px #01280c;
+	background-color: white;
+	opacity: 0.9;
+	color: #01280c;
+	font-size: 18px;
+	border-radius: 5px;
 }
 
-/* Layout details on the text of the content */
-ul {
-	list-style: none;
-	padding-left: 0;
+main h2 {
+	font-size: 30px;
+	text-shadow: 1px 1px 1px #01280c;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 50px;
 }
 
-li {
-	margin-bottom: 15px;
+main ul {
+	margin-top: 50px;
+	text-align: center;
 }
 
-h2 {
+li:nth-of-type(even) {
+	padding-bottom: 25px;
+}
+
+li:nth-of-type(odd) {
+	font-size: 20px;
+	font-style: italic;
+	font-weight: lighter;
 	text-decoration: underline;
+	padding-bottom: 5px;
 }
-
-article {
-	margin-left: 5%;
-	margin-bottom: 0;
-	margin-top: 25px;
+main section {
+	width: 90%;
+	margin: auto;
 	text-align: justify;
 }
 
-article p {
-	margin: 0 50px 50px 0;
+main h3 {
+	font-size: 24px;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #01280c;
+	padding-bottom: 10px;
+	padding-top: 20px;
 }
 
-h3 {
-	margin:0;
-}
-
-.text-center {
+#contact p {
+	padding-top: 150px;	
 	text-align: center;
-}
-
-.middle {
-	padding-top: 70px;
-}
-
-/* Graphic effect and layout of the boxes */
-.content-border {
-	width: 40%;
-	box-sizing: content-box;
-	box-shadow: 1px 1px 5px #023B0B;
-	border-radius: 5px 0;
-	text-align: center;
-	margin-left: 10%;
-	margin-top: 50px;
-	padding: 25px;
+	line-height: 50px;
 }
 
