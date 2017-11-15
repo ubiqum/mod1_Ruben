@@ -70,39 +70,42 @@ table {
 body {
 	font-family: Futura,Trebuchet MS,Arial,sans-serif;
 	color: white;
-	height: 840px;
 	overflow: hidden;
 } 
 
 .background {
 	background-image: url("../../images/soccer.jpeg") !important;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 840px;
+	height: 100vh;
 }
 
 header {
 	width: 100%;
-	height: 100px;
+	height: 125px;
 	background-image: linear-gradient(to top, #03ba0f -50%, #01280c 25%);
 	color: white;
 	box-shadow: 1px 1px 1px 1px #2ce848;
+	position: relative;
 }
 
-.image-wrapper img {
+img {
 	width: 75px;
 	height: 75px;
 	position: absolute;
-	top: 12.5px;
-	left: 2%;
+	top: 25px;
+	left: 25px;
 }
 
 header h1 {
 	position: absolute;
-	left: 12%;	
+	left: 125px;	
 	top: 25px;
-	font-size: 46px;
+	font-size: 48px;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-shadow: 1px 1px 1px #2ce848;
@@ -111,34 +114,34 @@ header h1 {
 nav {
 	position: absolute;
 	top: 80px;
-	left: 12%;
+	left: 125px;
+	height: 23.18px;
 }
 
 nav a {
 	color: white;
-	padding-right: 10px;
+	margin-right:15px;
+	line-height:23.18px;
+	text-align: center;
 }
 
 nav a:hover {
 	font-size: 20px;
 	color: #2ce848;
+	margin-right: 5px;
 }
 
 main {
-	width: 90%;
-	height: 400px;
-	margin: 70px auto;
+	width: 875px;
+	height: 600px;
+	margin:  75px auto;
 	box-shadow: 2px 2px 2px 2px #01280c;
 	background-color: white;
 	opacity: 0.9;
 	color: #01280c;
 	font-size: 18px;
 	border-radius: 5px;
-	overflow: auto;
-}
-
-.larger-box {
-	height: 600px;
+	overflow: scroll;
 }
 
 main h2 {
@@ -146,7 +149,7 @@ main h2 {
 	text-shadow: 1px 1px 1px #01280c;
 	font-weight: bold;
 	text-align: center;
-	padding-top: 50px;
+	margin-top: 75px;
 }
 
 #events {
@@ -154,6 +157,12 @@ main h2 {
 	text-align: center;
 	list-style: none;
 	padding-left: 0;
+}
+
+#home {
+	height: 400px;
+	width: 730px;
+	margin-top: 150px;
 }
 
 #home li {
@@ -173,9 +182,14 @@ main h2 {
 }
 
 main section {
-	width: 90%;
-	margin: auto;
+	width: 75%;
+	margin: 50px auto;
 	text-align: justify;
+	line-height: 22px;
+}
+
+main p {
+	margin-bottom: 20px;
 }
 
 main h3 {
@@ -186,8 +200,14 @@ main h3 {
 	padding-top: 20px;
 }
 
+#contact {
+	width: 730px;
+	height: 400px;
+	margin-top: 125px;
+}
+
 #contact p {
-	padding-top: 150px;	
+	padding-top: 125px;	
 	text-align: center;
 	line-height: 50px;
 }
@@ -219,12 +239,27 @@ main h3 {
 #first-table {
 	width: 100%;
 	margin: auto;
-	text-align: center;
 	table-layout: fixed;
 }
 
 #first-table td {
 	padding-bottom: 10px;
+}
+
+#first-table td:first-child {
+	text-align: center;
+}
+
+#first-table tbody td:first-child {
+	grid-row-span: 2;
+}
+
+#first-table td:nth-child(2) {
+	text-align: center;
+}
+
+#first-table td:last-child {
+	text-align: center;
 }
 
 .space {
@@ -278,6 +313,8 @@ thead th{
 
 #rules {
 	text-align: justify;
+	height: 63%;
+	line-height: 20px;
 }
 
 #rules h2 {
