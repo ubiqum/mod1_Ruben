@@ -143,6 +143,7 @@ main li:nth-of-type(even) {
 	padding-bottom: 50px;
 }
 
+/* nth-child works as well. */
 main li:nth-of-type(odd) {
 	font-size: 20px;
 	font-style: italic;
