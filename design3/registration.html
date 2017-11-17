@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="https://use.fontawesome.com/d532efb8b0.js"></script>
+    <!-- <script type="text/javascript" src="validate_registration.js"></script> -->
+</head>
+
+<body>
+    <div class="background">
+        <header>
+            <a href="home.html"><img class="logo" title="Logo" alt="Logo" src="../images/logo.png"></a>
+            <h1>Northside Youth Soccer League</h1>
+            <nav>
+                <a href="home.html"><i class="fa fa-home" aria-hidden="true"> Home</i></a>
+                <a id="border-link" href="about.html"><i class="fa fa-futbol-o" aria-hidden="true"> About NYSL</i></a>
+                <a href="contact.html"><i class="fa fa-envelope" aria-hidden="true"> Contact</i></a>
+                <a href="NYSLGameInformations.html"><i class="fa fa-calendar" aria-hidden="true"> Game Schedule</a></i>
+                <a href="rules.html"><i class="fa fa-wpforms" aria-hidden="true"> NYSL Rules</i></a>
+                <a href="registration.html"><i class="fa fa-sign-in" aria-hidden="true"> Registration</i></a>
+            </nav>
+        </header>
+        <main>
+            <h2>Registration form</h2>
+            <form action="show_data.html" id="form" method="GET">
+                <h5>Name</h5>
+                <div class="flex margin">
+                    <div class="flex1">
+                        <input type="text" id="firstname" name="firstname" placeholder="First Name">
+                    </div>
+                    <div class="flex1">
+                        <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="margin wider-input">
+                    <h5>Address</h5>
+                    <input type="text" name="streetaddress1" placeholder="Address Line 1" required>
+                </div>
+                <div class="margin wider-input">
+                    <input type="text" name="streetaddress2" placeholder="Address Line 2" required>
+                </div>
+                <div class="flex margin">
+                    <div class="flex1">
+                        <input type="text" name="city" placeholder="City" required>
+                    </div>
+                    <div class="flex1">
+                        <input type="text" name="zipcode" placeholder="Zip Code" required>
+                    </div>
+                </div>
+                <div class="flex margin">
+                    <div class="flex1">
+                        <h5>Birth date</h5>
+                        <input type="date" name="birthdate" required>
+                    </div>
+                    <div class="flex1">
+                        <h5>Gender</h5>
+                        <input type="radio" name="sex" value="Male" required>Male
+                        <input type="radio" name="sex" value="Female" required>Female
+                    </div>
+                </div>
+                <div class="wider-input margin">
+                    <h5>Parent/ Guardian</h5>
+                    <input type="text" name="ParentName" placeholder="Parent or Guardian Full Name" required>
+                </div>
+                <div class="flex margin">
+                    <div class="flex1">
+                        <h5>Contact Phone</h5>
+                        <input type="tel" name="telephonenumber" placeholder="Phone Number" required>
+                    </div>
+                    <div class="flex1">
+                        <h5>Contact Mail</h5>
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <h5 class="position">Which Elementary Schools do you live near?</h5>
+                <div class="flex margin">
+                    <div class="flex1">
+                        <h6>First Closest School</h6>
+                        <select>
+                            <option name="school" value="AJ Katzenmaier" required>AJ Katzenmaier</option>
+                            <option name="school" value="Marjorie P Hart" required>Marjorie P Hart</option>
+                            <option name="school" value="Greenbay" required>Greenbay</option>
+                            <option name="school" value="North Elementary" required>North Elementary</option>
+                            <option name="school" value="Howard A Yeager" required>Howard A Yeager</option>
+                            <option name="school" value="South Elementary" required>South Elementary</option>
+                        </select>
+                    </div>
+                    <div class="flex1">
+                        <h6>Second Closest School</h6>
+                        <select>
+                            <option name="school" value="AJ Katzenmaier" required>AJ Katzenmaier</option>
+                            <option name="school" value="Marjorie P Hart" required>Marjorie P Hart</option>
+                            <option name="school" value="Greenbay" required>Greenbay</option>
+                            <option name="school" value="North Elementary" required>North Elementary</option>
+                            <option name="school" value="Howard A Yeager" required>Howard A Yeager</option>
+                            <option name="school" value="South Elementary" required>South Elementary</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex margin">
+                    <h5>Grade</h5>
+                    <select class="margin-left">
+                        <option value="Pre-School">Pre-School</option>
+                        <option name="grade" value="1st">1<sup>st</sup></option>
+                        <option name="grade" value="2nd">2<sup>nd</sup></option>
+                        <option name="grade" value="3rd">3<sup>rd</sup></option>
+                        <option name="grade" value="4th">4<sup>th</sup></option>
+                        <option name="grade" value="5th">5<sup>th</sup></option>
+                    </select>
+                </div>
+                <div class="margin position">
+                    <h5>What position(s) do you normally play? (check all that apply)</h5>
+                    <input name="positionDesired" value="forward" type="checkbox">
+                    <label>Forward</label>
+                    <input name="positionDesired" value="midfield" type="checkbox">
+                    <label>Midfield</label>
+                    <input name="positionDesired" value="defense" type="checkbox">
+                    <label>Defense</label>
+                    <input name="positionDesired" value="goalkeeper" type="checkbox">
+                    <label>Goalkeeper</label>
+                </div>
+                <div class="margin">
+                    <h5>What position(s) do you want to play? (check all that apply)</h5>
+                    <input name="positionDesired" value="forward" type="checkbox">
+                    <label>Forward</label>
+                    <input name="positionDesired" value="midfield" type="checkbox">
+                    <label>Midfield</label>
+                    <input name="positionDesired" value="defense" type="checkbox">
+                    <label>Defense</label>
+                    <input name="positionDesired" value="goalkeeper" type="checkbox">
+                    <label>Goalkeeper</label>
+                </div>
+                <h5 class="position">Do you need a uniform?</h5>
+                <div class="flex margin">
+                    <div class="flex1">
+                        <h6>Jersey Size</h6>
+                        <select>
+                            <option name="size" value="Youth Small">Youth Small</option>
+                            <option name="size" value="Youth Medium">Youth Medium</option>
+                            <option name="size" value="Youth Large">Youth Large</option>
+                            <option name="size" value="Small">Small</option>
+                            <option name="size" value="Medium">Medium</option>
+                            <option name="size" value="Large">Large</option>
+                            <option name="size" value="Extra-Large">Extra-Large</option>
+                            <option name="size" value="No">No, I already have it.</option>
+                        </select>
+                    </div>
+                    <div class="flex1">
+                        <h6>Shorts Size</h6>
+                        <select>
+                            <option name="size" value="Youth Small">Youth Small</option>
+                            <option name="size" value="Youth Medium">Youth Medium</option>
+                            <option name="size" value="Youth Large">Youth Large</option>
+                            <option name="size" value="Small">Small</option>
+                            <option name="size" value="Medium">Medium</option>
+                            <option name="size" value="Large">Large</option>
+                            <option name="size" value="Extra-Large">Extra-Large</option>
+                            <option name="size" value="No">No, I already have it.</option>
+                        </select>
+                    </div>
+                </div>
+                <input type="checkbox" name="agreement">
+                <label id="agreement">I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL).</label>
+                <input type="submit" name="submit" value="Send">
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
