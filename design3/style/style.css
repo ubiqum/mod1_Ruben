@@ -185,6 +185,11 @@ img {
     position: absolute;
     top: 25px;
     left: 25px;
+    transition: all 0.5s;
+}
+
+img:hover {
+	transform: rotate(720deg);
 }
 
 header h1 {
@@ -217,6 +222,7 @@ nav a {
 
 nav a:hover {
     transform: scale(1.1, 1.1);
+    transform-origin: bottom;
     color: #2ce848;
 }
 
@@ -455,7 +461,7 @@ form select {
 form input:focus,
 form select:focus {
     border: solid 2px #2ce848;
-    box-shadow: 1px 1px 1px 1px #2ce848;
+    box-shadow: 1px 1px 1px #2ce848;
 }
 
 .wider-input input {
@@ -517,6 +523,7 @@ input[name="uniform"] {
 }
 
 input[type="submit"] {
+    letter-spacing: 1px;
     color: #01280c;
     font-weight: bold;
     display: block;
@@ -524,12 +531,20 @@ input[type="submit"] {
     padding: 5px;
     font-size: 18px;
     background-image: linear-gradient(to top, #01280c -10%, #03ba0f 35%);
-    border: 2px #2ce848;
-    border-style: outset;
+    box-shadow: 2px 2px 2px #03ba0f;
+    border: none;
 }
 
 input[type="submit"]:hover {
-    background: #2ce848;
+    background: #03ba0f;
+    transform: translate(2px, 1px);
+
+}
+
+input[type="submit"]:active {
+	transform: translate(2px, 2px);
+	box-shadow: none;
+	border-style: none;
 }
 
 iframe {
